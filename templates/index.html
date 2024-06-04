@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Quiz!</h1>
+        <p>Do you want to play the computer Quiz?</p>
+        <a href="{{ url_for('quiz') }}">Yes, let's play!</a>
+    </div>
+</body>
+</html>

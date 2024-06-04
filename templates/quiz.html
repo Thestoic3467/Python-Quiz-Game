@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Okay, let's play!</h1>
+        <form method="post" action="{{ url_for('quiz') }}">
+            <p>What does CPU stand for?</p>
+            <input type="text" name="q1">
+            
+            <p>What does GPU stand for?</p>
+            <input type="text" name="q2">
+            
+            <p>What does RAM stand for?</p>
+            <input type="text" name="q3">
+            
+            <p>What does PSU stand for?</p>
+            <input type="text" name="q4">
+            
+            <button type="submit">Submit Answers</button>
+        </form>
+    </div>
+</body>
+</html>

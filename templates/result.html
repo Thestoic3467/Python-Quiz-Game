@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <p>Congratulations! You have answered {{ score }} questions correctly.</p>
+        <p>Your overall scoring percentage is {{ percentage }}%.</p>
+        <a href="{{ url_for('index') }}">Play Again</a>
+    </div>
+</body>
+</html>
